@@ -29,14 +29,12 @@ in layouts. More docs [here](https://middlemanapp.com/basics/blogging/).
 To add a code block in Markdown, use three tildes `~~~` at the beginning and end.
 For some reason, it doesn't seem to indent correctly unless you have a blank line as the first line, like so:
 
-```
-~~~
+    ~~~
 
-def hi
-  puts "hi"
-end
-~~~
-```
+    def hi
+      puts "hi"
+    end
+    ~~~
 
 For a code span, use single backticks around the span: `` `this is code` ``
 
