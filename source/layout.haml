@@ -1,0 +1,18 @@
+!!!doctype
+%html
+  %head
+    %meta{ charset: "utf-8" }
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge;chrome=1" }
+    %link{ rel: "stylesheet", href: "http://fonts.googleapis.com/css?family=Droid+Sans+Mono" }
+    %link{ rel: "stylesheet", href: "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/sunburst.min.css" }
+    %link{ rel: "stylesheet", href: "/assets/css/all.css" }
+    %title
+      bestcohort blog
+
+  %body
+    #content{ role: "content" }
+      = yield
+    %script{ src: "/assets/js/highlight.pack.js" }
+    %script
+      - # hljs.configure({ languages: ['clojure', 'elixir', 'javascript', 'ruby'] });
+      hljs.initHighlightingOnLoad();
